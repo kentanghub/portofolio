@@ -55,7 +55,7 @@ function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-3 md:py-4"
     >
       <div className="max-w-6xl mx-auto glass px-4 md:px-6 py-3 flex items-center justify-between">
-        <div className="font-bold text-lg md:text-xl text-gradient">Reihan</div>
+        <div className="font-bold text-lg md:text-xl text-gradient">Rehan</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
@@ -288,7 +288,7 @@ function Proyek() {
   const projects = [
     {
       title: 'Dokin.id',
-      desc: 'Platform SaaS untuk pembuatan slip gaji secara digital dan otomatis. Dibangun dengan teknologi modern untuk memudahkan perusahaan dalam mengelola payroll.',
+      desc: 'Buat slip gaji, invoice, surat resmi, dan rekap keuangan dalam hitungan menit. Tanpa ribet, tanpa mahal — langsung download.',
       tags: ['SaaS', 'Web App', 'Payroll'],
       highlights: ['Slip Gaji Digital', 'Otomatisasi', 'SaaS'],
       link: 'https://dokin.id',
@@ -299,7 +299,7 @@ function Proyek() {
       desc: 'Proyek open-source yang dikembangkan sebagai sarana belajar dan eksplorasi teknologi baru. Tersedia secara publik di GitHub.',
       tags: ['Open Source', 'Learning Project'],
       highlights: ['Open Source', 'Belajar'],
-      link: 'https://github.com/kentanghub/carebrum',
+      link: 'https://carebrum.vercel.app/',
       featured: false,
     },
     {
@@ -308,14 +308,6 @@ function Proyek() {
       tags: ['Open Source', 'AI Gateway'],
       highlights: ['AI Gateway', 'Open Source'],
       link: 'https://github.com/kentanghub/bawwab',
-      featured: false,
-    },
-    {
-      title: 'BuatSlip',
-      desc: 'Website berbasis SaaS untuk pembuatan slip gaji digital. Dikerjakan secara mandiri sebagai sarana belajar membangun produk digital dari nol.',
-      tags: ['SaaS', 'Supabase', 'Vercel'],
-      highlights: ['Produk Mandiri', 'Belajar'],
-      link: 'https://buatslip.vercel.app',
       featured: false,
     },
   ];
