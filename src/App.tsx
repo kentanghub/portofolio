@@ -289,15 +289,16 @@ function Proyek() {
     {
       title: 'Dokin.id',
       desc: 'Buat slip gaji, invoice, surat resmi, dan rekap keuangan dalam hitungan menit. Tanpa ribet, tanpa mahal — langsung download.',
-      tags: ['SaaS', 'Web App', 'Payroll'],
+      tags: ['SaaS', 'Web App', 'Slip Gaji', 'Invoice', 'Surat Resmi'],
       highlights: ['Slip Gaji Digital', 'Otomatisasi', 'SaaS'],
       link: 'https://dokin.id',
       featured: true,
+      image: '/dokin.svg',
     },
     {
       title: 'Carebrum',
-      desc: 'Proyek open-source yang dikembangkan sebagai sarana belajar dan eksplorasi teknologi baru. Tersedia secara publik di GitHub.',
-      tags: ['Open Source', 'Learning Project'],
+      desc: 'AI-powered research assistant that combines real-time web search with multi-agent intelligence to deliver publication-quality reports in under 60 seconds.',
+      tags: ['Open Source', 'Learn'],
       highlights: ['Open Source', 'Belajar'],
       link: 'https://carebrum.vercel.app/',
       featured: false,
@@ -356,8 +357,12 @@ function Proyek() {
                     Kunjungi Proyek <ExternalLink className="w-3.5 h-3.5 md:w-4 md:h-4" />
                   </a>
                 </div>
-                <div className="w-full md:w-48 lg:w-64 aspect-video rounded-lg md:rounded-xl bg-gradient-to-br from-accent/10 to-accent-glow/10 flex items-center justify-center">
-                  <Rocket className="w-10 h-10 md:w-16 md:h-16 text-accent/30" />
+                <div className="w-full md:w-48 lg:w-64 aspect-video rounded-lg md:rounded-xl bg-gradient-to-br from-accent/10 to-accent-glow/10 flex items-center justify-center overflow-hidden">
+                  {project.image ? (
+                    <img src={project.image} alt={project.title} className="w-full h-full object-contain p-4" />
+                  ) : (
+                    <Rocket className="w-10 h-10 md:w-16 md:h-16 text-accent/30" />
+                  )}
                 </div>
               </div>
             </motion.div>
