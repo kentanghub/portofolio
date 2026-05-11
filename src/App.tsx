@@ -4,7 +4,7 @@ import {
   Code2, Sparkles, ArrowDown, Mail,
   ExternalLink, Globe, Zap, BookOpen,
   Terminal, Rocket, ChevronRight, Star,
-  Smartphone, Briefcase, GraduationCap, Award, User,
+  Smartphone, Briefcase, GraduationCap, Award,
   Menu, X
 } from 'lucide-react';
 
@@ -204,7 +204,7 @@ function Tentang() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Tentang <span className="text-gradient">Saya</span></h2>
             <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-              Saya lulusan Teknik Informatika dari Universitas Serang Raya dengan IPK 3,85.
+              Saya lulusan Teknik Informatika dari Universitas Serang Raya.
               Saya memiliki ketertarikan pada dunia pemrograman dan pengembangan aplikasi,
               terutama di bidang web dan mobile.
             </p>
@@ -227,13 +227,11 @@ function Tentang() {
           </div>
           <div className="relative mt-8 md:mt-0">
             <div className="aspect-square rounded-2xl md:rounded-3xl overflow-hidden glass p-1.5 md:p-2">
-              <div className="w-full h-full rounded-xl md:rounded-2xl bg-gradient-to-br from-accent/20 to-accent-glow/20 flex items-center justify-center">
-                <User className="w-20 h-20 md:w-32 md:h-32 text-accent/50" />
-              </div>
-            </div>
-            <div className="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 glass p-3 md:p-4 rounded-lg md:rounded-xl">
-              <div className="text-2xl md:text-3xl font-bold text-gradient">3.85</div>
-              <div className="text-xs md:text-sm text-gray-400">IPK / 4.00</div>
+              <img
+                src="/MochReihanFL.png"
+                alt="Mochammad Reihan Fajar Lintang"
+                className="w-full h-full rounded-xl md:rounded-2xl object-cover"
+              />
             </div>
           </div>
         </motion.div>
@@ -405,7 +403,6 @@ function Pengalaman() {
       degree: 'S1 Teknik Informatika',
       school: 'Universitas Serang Raya',
       period: '2018 — 2022',
-      detail: 'IPK 3,85 / 4,00',
     },
   ];
 
@@ -467,8 +464,7 @@ function Pengalaman() {
               <div key={edu.degree}>
                 <div className="text-accent text-xs md:text-sm font-medium mb-1">{edu.period}</div>
                 <h3 className="text-lg md:text-xl font-bold mb-1">{edu.degree}</h3>
-                <div className="text-gray-400 text-xs md:text-sm mb-1 md:mb-2">{edu.school}</div>
-                <div className="text-gray-300 text-sm">{edu.detail}</div>
+                <div className="text-gray-400 text-xs md:text-sm">{edu.school}</div>
               </div>
             ))}
           </motion.div>
