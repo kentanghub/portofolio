@@ -302,6 +302,7 @@ function Proyek() {
       highlights: ['Open Source', 'Belajar'],
       link: 'https://carebrum.vercel.app/',
       featured: false,
+      image: '/carebrum.svg',
     },
     {
       title: 'Bawwab',
