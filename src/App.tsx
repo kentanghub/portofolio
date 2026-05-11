@@ -228,7 +228,7 @@ function Tentang() {
           <div className="relative mt-8 md:mt-0">
             <div className="aspect-square rounded-2xl md:rounded-3xl overflow-hidden glass p-1.5 md:p-2">
               <img
-                src="/MochReihanFL.png"
+                src="/MochReihanFL.svg"
                 alt="Mochammad Reihan Fajar Lintang"
                 className="w-full h-full rounded-xl md:rounded-2xl object-cover"
               />
