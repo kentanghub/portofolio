@@ -9,8 +9,8 @@ export default {
       colors: {
         dark: '#0a0a0f',
         card: '#12121a',
-        accent: '#84a98c',
-        'accent-glow': '#9db4a0',
+        accent: '#588157',
+        'accent-glow': '#7a9e7a',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

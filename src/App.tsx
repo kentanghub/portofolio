@@ -32,8 +32,8 @@ function AnimatedBackground() {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
       <div className="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-accent/20 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-emerald-500/10 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-[40%] left-[50%] w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-teal-500/10 rounded-full blur-[60px] md:blur-[100px] animate-pulse-slow" style={{ animationDelay: '4s' }} />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-accent/10 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-[40%] left-[50%] w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent/10 rounded-full blur-[60px] md:blur-[100px] animate-pulse-slow" style={{ animationDelay: '4s' }} />
     </div>
   );
 }
@@ -227,7 +227,7 @@ function Tentang() {
           </div>
           <div className="relative mt-8 md:mt-0">
             <div className="aspect-square rounded-2xl md:rounded-3xl overflow-hidden glass p-1.5 md:p-2">
-              <div className="w-full h-full rounded-xl md:rounded-2xl bg-gradient-to-br from-accent/20 to-emerald-500/20 flex items-center justify-center">
+              <div className="w-full h-full rounded-xl md:rounded-2xl bg-gradient-to-br from-accent/20 to-accent-glow/20 flex items-center justify-center">
                 <User className="w-20 h-20 md:w-32 md:h-32 text-accent/50" />
               </div>
             </div>
@@ -275,7 +275,7 @@ function Keahlian() {
                   whileInView={{ width: `${skill.level}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 1.2, ease: "easeOut" }}
-                  className="h-full bg-gradient-to-r from-accent to-emerald-300 rounded-full"
+                  className="h-full bg-gradient-to-r from-accent to-accent-glow rounded-full"
                 />
               </div>
             </motion.div>
@@ -366,7 +366,7 @@ function Proyek() {
                     Kunjungi Proyek <ExternalLink className="w-3.5 h-3.5 md:w-4 md:h-4" />
                   </a>
                 </div>
-                <div className="w-full md:w-48 lg:w-64 aspect-video rounded-lg md:rounded-xl bg-gradient-to-br from-accent/10 to-emerald-500/10 flex items-center justify-center">
+                <div className="w-full md:w-48 lg:w-64 aspect-video rounded-lg md:rounded-xl bg-gradient-to-br from-accent/10 to-accent-glow/10 flex items-center justify-center">
                   <Rocket className="w-10 h-10 md:w-16 md:h-16 text-accent/30" />
                 </div>
               </div>
