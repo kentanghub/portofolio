@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, useState, useMemo } from 'react';
+import { useRef, useState } from 'react';
 import {
   Code2, Sparkles, ArrowDown, Mail,
   ExternalLink, Globe, Zap, BookOpen,
@@ -29,65 +29,11 @@ const staggerItem = {
 };
 
 function AnimatedBackground() {
-  const stars = useMemo(() => {
-    return Array.from({ length: 100 }, (_, i) => ({
-      id: i,
-      left: `${Math.random() * 100}%`,
-      top: `${Math.random() * 100}%`,
-      size: Math.random() * 2 + 1,
-      duration: `${Math.random() * 3 + 2}s`,
-      delay: `${Math.random() * 5}s`,
-      opacity: Math.random() * 0.7 + 0.3,
-    }));
-  }, []);
-
-  const shootingStars = useMemo(() => {
-    return Array.from({ length: 4 }, (_, i) => ({
-      id: i,
-      left: `${Math.random() * 80 + 10}%`,
-      top: `${Math.random() * 40}%`,
-      duration: `${Math.random() * 2 + 1.5}s`,
-      delay: `${Math.random() * 8 + i * 3}s`,
-    }));
-  }, []);
-
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none bg-[radial-gradient(ellipse_at_center,_#0B0F1A_0%,_#05080F_100%)]">
-      {/* Stars */}
-      {stars.map((star) => (
-        <div
-          key={star.id}
-          className="absolute rounded-full bg-white animate-twinkle"
-          style={{
-            left: star.left,
-            top: star.top,
-            width: star.size,
-            height: star.size,
-            opacity: star.opacity,
-            '--twinkle-duration': star.duration,
-            '--twinkle-delay': star.delay,
-          } as React.CSSProperties}
-        />
-      ))}
-
-      {/* Shooting stars */}
-      {shootingStars.map((s) => (
-        <div
-          key={`shoot-${s.id}`}
-          className="absolute w-16 h-[1px] bg-gradient-to-r from-white to-transparent animate-shooting"
-          style={{
-            left: s.left,
-            top: s.top,
-            '--shoot-duration': s.duration,
-            '--shoot-delay': s.delay,
-          } as React.CSSProperties}
-        />
-      ))}
-
-      {/* Nebula glows */}
-      <div className="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-accent/10 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-accent/5 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-[40%] left-[50%] w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent/5 rounded-full blur-[60px] md:blur-[100px] animate-pulse-slow" style={{ animationDelay: '4s' }} />
+    <div className="fixed inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-accent/20 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-accent/10 rounded-full blur-[80px] md:blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-[40%] left-[50%] w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-accent/10 rounded-full blur-[60px] md:blur-[100px] animate-pulse-slow" style={{ animationDelay: '4s' }} />
     </div>
   );
 }
