@@ -297,7 +297,7 @@ function Proyek() {
     {
       title: 'Carebrum',
       desc: 'AI-powered research assistant that combines real-time web search with multi-agent intelligence to deliver publication-quality reports in under 60 seconds.',
-      tags: ['Open Source', 'Learn'],
+      tags: ['Open Source', 'Learn', 'AI'],
       link: 'https://carebrum.vercel.app/',
       featured: false,
       image: '/carebrum.svg',
