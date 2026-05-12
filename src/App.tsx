@@ -290,7 +290,6 @@ function Proyek() {
       title: 'Dokin.id',
       desc: 'Buat slip gaji, invoice, surat resmi, dan rekap keuangan dalam hitungan menit. Tanpa ribet, tanpa mahal — langsung download.',
       tags: ['SaaS', 'Web App', 'Slip Gaji', 'Invoice', 'Surat Resmi'],
-      highlights: ['Slip Gaji Digital', 'Otomatisasi', 'SaaS'],
       link: 'https://dokin.id',
       featured: true,
       image: '/dokin.svg',
@@ -299,7 +298,6 @@ function Proyek() {
       title: 'Carebrum',
       desc: 'AI-powered research assistant that combines real-time web search with multi-agent intelligence to deliver publication-quality reports in under 60 seconds.',
       tags: ['Open Source', 'Learn'],
-      highlights: ['Open Source', 'Belajar'],
       link: 'https://carebrum.vercel.app/',
       featured: false,
       image: '/carebrum.svg',
@@ -308,7 +306,6 @@ function Proyek() {
       title: 'Bawwab',
       desc: 'Proyek open-source yang berfokus pada pengembangan infrastruktur AI gateway. Dibuat untuk memahami cara kerja sistem gateway dan routing.',
       tags: ['Open Source', 'AI Gateway'],
-      highlights: ['AI Gateway', 'Open Source'],
       link: 'https://github.com/kentanghub/bawwab',
       featured: false,
     },
@@ -339,13 +336,6 @@ function Proyek() {
                     {project.featured && <Star className="w-4 h-4 md:w-5 md:h-5 text-accent fill-accent" />}
                   </div>
                   <p className="text-gray-400 text-sm md:text-base mb-4 md:mb-6 leading-relaxed">{project.desc}</p>
-                  <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-6">
-                    {project.highlights.map((h) => (
-                      <span key={h} className="px-2 py-0.5 md:px-3 md:py-1 bg-accent/10 text-accent-glow text-xs md:text-sm rounded-full">
-                        {h}
-                      </span>
-                    ))}
-                  </div>
                   <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-6">
                     {project.tags.map((tag) => (
                       <span key={tag} className="px-2 py-0.5 md:px-3 md:py-1 glass text-gray-300 text-xs md:text-sm rounded-full">
